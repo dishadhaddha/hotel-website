@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harriot hotels</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+	<script type="text/javascript" src="indexslide.js"></script>
+</head>
+<body >
+
+	<div class="header-container">
+		<div>
+			<img src="images/logo.jpg" class ="logo"></img>
+		</div>
+		<div   align="right" >
+			<input class="header" type="button" value="Home" onclick="window.location.href='index.html'" />
+			<input class="header" type="button" value="Rooms" onclick="window.location.href='roomgrid.html'" />
+			<input class="header" type="button" value="Team" onclick="window.location.href='staff.html'" />
+			<input class="header" type="button" value="Book" onclick="window.location.href='booking.html'" />
+			<input class="header" type="button" value="About" onclick="window.location.href='index.html'" />
+		</div>
+	</div>
+	<div class="grid-container">
+		<div id = "intro" >
+			<p  style="font-size: 45px; line-height: 48px; ">Harriot Hotels. <br/>Experience the best. </p>
+
+			Harriot hotels unlock the extraordinary in every moment by creating experiences beyond expectation. Located within major gateway cities and resort destinations, each Harriot hotel is uniquely designed to reflect its own distinct environment and provides a hub for travelers and locals alike. Harriot hotels exemplify the pursuit of life lived grandly offering guests superior service, first-class accommodations and an abundance of options within a backdrop of dramatic architecture and innovative design. 
+		</div>
+		<div class="grid-item">
+			<img src="images/main4.jpg" class="grid-images" id="element">      
+			<div class="move" align="left">
+				<button onclick="mleft()"><p><i class="arrow left"></i></p></button>
+				<button onclick="mright()"><p><i class="arrow right"></i></p></button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

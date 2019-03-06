@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><title>payment</title>
+<script src="val.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/pay.css">
+</head>
+<body><table><tr><th><h1 style="font-style:oblique;font-size: 40px">Payment Options</h1>
+<div class="vertical-menu">
+  <a href="pay.html" class="active">Credit/debit</a>
+  <a href="ob.html">online banking</a>
+  <a href="#">paytm</a>
+  <a href="#">COD</a>
+  <a href="#">Back</a>
+</div></th><th></th>
+<th>
+<div class="flex-container">
+<h6align=center><span>Credit/Debit</span></h6>
+<br><span>Owner:</span>
+ <input type="text" name="owner" class="one">
+&nbsp &nbsp<span> cvv:</span>
+<input type="text" name="cvv" id="two"><br>
+<span>Account number:</span>
+<input type="text" name="accno" class="three" id="num"><br>
+<span>Expiry date:</span>
+<input type="month" name="month" min ="2018-9-14" class="four">
+<img src="images/visa.jpg" alt="visa" width="100" height="60" class="fixed" style="align-self: right">
+<br><br>
+<input type="submit" class="button" onclick="validate()">
+<br>
+</div> 
+</th></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOTELS | ROOMS</title>
+	<link rel="stylesheet" type="text/css" href="../css/grid.css">
+	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+	<script type="text/javascript" src="valid.js"></script>
+
+</head>
+<body >
+	<div class="header-container">
+		<div ><img src="images/logo.jpg" class ="logo"></img></div>
+
+		<div   align="right" >
+			<input class="header" type="button" value="Home" onclick="window.location.href='index.html'" />
+			<input class="header" type="button" value="Rooms" onclick="window.location.href='roomgrid.html'" />
+			<input class="header" type="button" value="Team" onclick="window.location.href='staff.html'" />
+			<input class="header" type="button" value="Book" onclick="window.location.href='booking.html'" />
+			<input class="header" type="button" value="About" onclick="window.location.href='index.html'" />  
+		</div>
+	</div>
+	<div class="grid-container" >
+		<div class="grid-item" >
+			<img class="grid-image" src="images/room1.jpg"></img>
+			<div class="wrapper">
+    			<div class="text" >
+    				<h1>Standard suite</h1> <br/>
+    				<input class="booking" type="button" value="Book" onclick="window.location.href='booking.html'" 
+    					   onclick="suite('Standard')" />	
+    			</div>
+  			</div>
+		</div>
+		<div class="grid-item" >
+			<img class="grid-image" src="images/room2.jpg" ></img>
+			<div class="wrapper">
+    			<div class="text" >
+    				<h1>Deluxe suite</h1> <br/>
+    				<input class="booking" type="button" value="Book" onclick="window.location.href='booking.html'"s />	
+    			</div>
+  			</div>
+		</div>
+		<div class="grid-item">
+			<img class="grid-image" src="images/room3.jpg"></img>
+			<div class="wrapper">
+    			<div class="text" >
+    				<h1>Presidential suite</h1> <br/>
+    				<input class="booking" type="button" value="Book" onclick="window.location.href='booking.html'" />	
+    			</div>
+  			</div>
+		</div>
+		<div class="grid-item">
+			<img class="grid-image" src="images/room4.jpg"></img>
+			<div class="wrapper">
+    			<div class="text" >
+    				<h1>Royal suite</h1> <br/> 
+    				<input class="booking" type="button" value="Book" onclick="window.location.href='booking.html'" />	
+    			</div>
+  			</div>
+		</div>
+		<div class="grid-item">
+			<img class="grid-image" src="images/room5.jpg"></img>
+			<div class="wrapper">
+    			<div class="text" >
+    				<h1>Imperial suite</h1> <br/>
+    				<input class="booking" type="button" value="Book" onclick="call('Imperial')" />	
+    			</div>
+  			</div>
+		</div>
+		<div class="grid-item">
+			<img class="grid-image" src="images/room6.jpg"></img>
+			<div class="wrapper">
+    			<div class="text" >
+    				<h1>Executive suite</h1> <br/>
+    				 <input class="booking" type="button" value="Book" onclick="window.location.href='booking.html'" />	
+    			</div>
+  			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ROOMS</title>
+	<link rel="stylesheet" type="text/css" href="staff.css">
+	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+</head>
+
+<body>
+	<div class="header-container">
+		<div>
+			<img src="logo.jpg" class="logo"></img>
+		</div>
+		<div align="right">
+			<input class="header" type="button" value="Home" onclick="window.location.href='index.html'" />
+			<input class="header" type="button" value="Rooms" onclick="window.location.href='roomgrid.html'" />
+			<input class="header" type="button" value="Team" onclick="window.location.href='staff.html'" />
+			<input class="header" type="button" value="Book" onclick="window.location.href='booking.html'" />
+			<input class="header" type="button" value="About" onclick="window.location.href='index.html'" />
+		</div>
+    </div>
+
+    <div class="access" align="center">
+
+        <h1 style="padding:30px;">LOGIN</h1>
+        <form  action="login.php" method="POST">
+            <table>
+                <tr>
+                <td>Staff Id:</td>
+                <td>	<input class="details" type="text" name="id"  required/>
+                        <p id="h">
+                            <?php echo "hello;"?>
+                        </p>	</td>
+                </tr>
+                <tr>
+                <td>Password:</td>
+                <td>	<input class="details" type="password" name="password" required/>		</td>
+                </tr>
+                
+                </table>
+
+              
+            <input type="submit" value="Submit" class="login" >
+            <input type="reset" value="Clear" class="login" >
+        </form>
+    </div>
+    
+
+</body>
+</html>

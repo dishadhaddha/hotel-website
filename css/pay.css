@@ -1,0 +1,88 @@
+ .one{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+border: 2px solid greay;
+    border-radius: 10px;
+}
+#two {
+    width: 25%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+border: 2px solid greay;
+    border-radius: 10px;
+font-size:130%;
+}
+.three{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+border: 0px solid greay;
+    border-radius: 10px;
+}
+.four{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+border: 2px solid greay;
+    border-radius: 10px;
+}
+span{
+font-size: 170%;
+font-style: sans serif;
+font-weight: bold;
+object-position: 50px 100%;
+}
+.flex-container {
+  display: flex;
+  background-color: light grey;
+ justify-content: center;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+
+    width: 100%;
+
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #black}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #black;
+  transform: translateY(4px);}
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color:white;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: black;
+    color: white;
+}

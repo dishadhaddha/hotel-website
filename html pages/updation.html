@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ROOMS</title>
+	<link rel="stylesheet" type="text/css" href="../../css/booking.css">
+	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+</head>
+
+<body>
+	<div class="header-container">
+		<div>
+			<img src="images/logo.jpg" class="logo">
+		</div>
+		<div align="right">
+			<input class="header" type="button" value="Home" onclick="window.location.href='index.html'" />
+			<input class="header" type="button" value="Rooms" onclick="window.location.href='roomgrid.html'" />
+			<input class="header" type="button" value="Team" onclick="window.location.href='staff.html'" />
+			<input class="header" type="button" value="Book" onclick="window.location.href='booking.html'" />
+			<input class="header" type="button" value="About" onclick="window.location.href='index.html'" />
+		</div>
+    </div>
+
+    <div class="booking" align="center">
+
+        <h1 style="padding:30px;">USER DETAILS</h1>
+        <form  action="php/update.php" method="POST">
+            <table >
+                <tr>
+                <td>Enter Username:</td>
+                <td>	<input class="details" type="text" name="email" placeholder="Enter Email Id" required/>    </td>
+                </tr>
+                <tr>
+                <td>New Category:</td>
+					<td>	<select class="details" name="category" id="list" required>
+								<option value="1">Standard</option>
+                                <option value="2">Deluxe</option>
+								<option value="3">Executive</option>
+								<option value="4">Presidential</option>
+								<option value="5">Royal</option>
+								<option value="6">Imperial</option>
+							</select>
+					</td>
+				</tr>
+                 <td>New Check In:</td>
+                <td>	<input class="details" type="date" name="indatenew" required/>		</td>
+                </tr>             
+                <tr>
+                <td>New Check Out:</td>
+                <td>	<input class="details" type="date" name="outdatenew" required/>		</td>
+                </tr>              
+                
+                
+                </table>
+
+              
+            <input type="submit" value="Submit" class="func" >
+            <input type="reset" value="Clear" class="func" >
+        </form>
+    </div>
+
+    
+    
+
+</body>
+</html>
+

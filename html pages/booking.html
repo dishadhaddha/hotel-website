@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HOTELS | ROOMS</title>
+		<link rel="stylesheet" type="text/css" href="../css/booking.css">
+			<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+			<script type="text/javascript" src="valid.js"></script>
+			
+
+<meta charset="utf-8"/>
+
+
+	</head>
+	<body onload="dates()">
+		<div class="header-container">
+			<div>
+				<img src="images/logo.jpg" class ="logo">
+			</div>
+			<div   align="right" >
+				<input class="header" type="button" value="Home" onclick="window.location.href='index.html'" />
+				<input class="header" type="button" value="Rooms" onclick="window.location.href='roomgrid.html'" />
+				<input class="header" type="button" value="Team" onclick="window.location.href='staff.html'" />
+				<input class="header" type="button" value="Book" onclick="window.location.href='booking.html'" />
+				<input class="header" type="button" value="About" onclick="window.location.href='index.html'" />
+			</div>
+		</div>
+		<div class="booking" align="center">
+			<form  action="php/reserve.php" method="POST">
+				<table>
+					<tr>
+					<td>Arrival date:</td>
+					<td>	<input class="details" type="date" name="indate"  required/>	</td>
+					</tr>
+					<tr>
+					<td>Departure date:</td>
+					<td>	<input class="details" type="date" name="outdate" required/>		</td>
+					</tr>
+					<tr>
+					<td>Customer Name:</td>
+					<td>	<input class="details" type="text" name="name" placeholder="Enter Full Name" required/>	</td>
+					</tr>
+					<tr>
+					<td>Contact:</td>
+					<td>	<input class="details" type="text" name="contact" placeholder="Contact" required/>		</td>
+					</tr>
+					<tr>
+                    <tr>
+					<td>Email Id:</td>
+					<td>	<input class="details" type="email" name="email" placeholder="Email Id" required/>		</td>
+					</tr>
+					<tr>
+					<td>Suite:</td>
+					<td>	<select class="details" name="category" id="list" required>
+								<option value="1">Standard</option>
+                                <option value="2">Deluxe</option>
+								<option value="3">Executive</option>
+								<option value="4">Presidential</option>
+								<option value="5">Royal</option>
+								<option value="6">Imperial</option>
+							</select>
+					</td>
+					</tr>
+					<tr>
+					<td>Adults:</td>
+					<td>	<input class="details" type="number" name="adults" step="1" placeholder="Adults" required/>	</td>
+					</tr>
+					<tr>
+					<td>Children:</td>
+					<td><input class="details" type="number" name="children" step="1" placeholder="Children" required/></td>
+                    </tr>
+				</table>
+				<input type="submit" value="Submit" onclick="validate()" onsubmit="check()" class="func">
+				<input type="button" value="Clear" onclick="call()" class="func">
+			</form>
+		</div>
+	</body>
+</html>
